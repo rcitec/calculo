@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+    padding: 10px;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 0;
+}
+
+/* Estrutura base padrão (PC e Notebook) */
+.container {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin: 15px 0;
+    color: #2c3e50;
+}
+
+h3 {
+    margin: 15px 0 10px 0;
+    color: #34495e;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.form-group {
+    margin-bottom: 12px;
+}
+
+label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 14px;
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #27ae60;
+}
+
+/* ==========================================
+   RESPONSIVIDADE EXCLUSIVA PARA SMARTPHONE
+   ========================================== */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        background-color: #ffffff;
+    }
+
+    .container {
+        padding: 12px;
+        border-radius: 0;
+        box-shadow: none;
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .row-dupla {
+        gap: 8px !important;
+    }
+
+    /* FIXA O MENU E O PAINEL NO TOPO DO CELULAR */
+    .topo-fixado-celular {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+        background-color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #e0e0e0;
+    }
+}
