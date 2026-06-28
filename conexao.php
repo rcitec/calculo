@@ -1,7 +1,7 @@
 <?php
 $host = "calculo_fretes.mysql.dbaas.com.br";
-$usuario = "calculo_fretes";
-$senha = "Rx@891602@8483";
+$usuario = "inserir_usuario";
+$senha = "inserir_senha";
 $banco = "calculo_fretes";
 
 try {
